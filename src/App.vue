@@ -3,6 +3,7 @@
     <DcHeader />
     <DcMainBlack />
     <DcMainBlue />
+    <DcFooter />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import DcHeader from './components/Header.vue';
 import DcMainBlack from './components/MainBlack.vue';
 import DcMainBlue from './components/MainBlue.vue';
+import DcFooter from './components/FooterDc.vue';
 
 export default {
   name: 'App',
@@ -17,6 +19,7 @@ export default {
     DcHeader,
     DcMainBlack,
     DcMainBlue,
+    DcFooter,
   }
 }
 </script>

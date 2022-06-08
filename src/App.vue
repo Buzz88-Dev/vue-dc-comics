@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <DcHeader />
-    <DcMain />
+    <DcMainBlack />
+    <DcMainBlue />
   </div>
 </template>
 
 <script>
 import DcHeader from './components/Header.vue';
-import DcMain from './components/Main.vue';
+import DcMainBlack from './components/MainBlack.vue';
+import DcMainBlue from './components/MainBlue.vue';
 
 export default {
   name: 'App',
   components: {
     DcHeader,
-    DcMain,
+    DcMainBlack,
+    DcMainBlue,
   }
 }
 </script>

@@ -1,7 +1,6 @@
 <template>
-  <div class="header">
-    <nav class="navbar">
-
+  <div class="dcHeader">
+    <nav class="dcNavbar">
       <div class="image">
         <img src="../assets/dc-logo.png">
       </div>
@@ -53,16 +52,21 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-  .header {
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  .dcHeader {
+    width: 100%;
+  }
+  .dcNavbar {
     width: 80%;
     margin: auto;
-  }
-  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // Debug
-    background-color: red;
   }
 
   .image img {

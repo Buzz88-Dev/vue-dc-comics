@@ -68,11 +68,11 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 20px;
+        padding: 40px 20px;
     }
 
     .singleIcon img {
-        width: 25%;
+        width: 20%;
         height: auto;
     }
 

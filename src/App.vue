@@ -4,6 +4,7 @@
     <DcMainBlack />
     <DcMainBlue />
     <DcFooter />
+    <FooterIcons />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import DcHeader from './components/Header.vue';
 import DcMainBlack from './components/MainBlack.vue';
 import DcMainBlue from './components/MainBlue.vue';
 import DcFooter from './components/FooterDc.vue';
+import FooterIcons from './components/FooterIcons.vue';
 
 export default {
   name: 'App',
@@ -20,6 +22,7 @@ export default {
     DcMainBlack,
     DcMainBlue,
     DcFooter,
+    FooterIcons,
   }
 }
 </script>

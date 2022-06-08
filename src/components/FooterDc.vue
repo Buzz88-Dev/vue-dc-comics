@@ -68,8 +68,7 @@ export default {
 
     .background_Image {
         background-image: url("../assets/footer-bg.jpg");
-        // debug
-        height: 300px;
+        padding: 40px 0px;
     }
 
     .width80 {
@@ -80,28 +79,37 @@ export default {
 
     .text_left {
         display: flex;
-        justify-content: flex-start;
+        width: 50%;
     }
 
     .text_column {
         display: flex;
         flex-direction: column;
+        width: 25%;
+        margin-right: 10px;
     }
 
     h4 {
         color: white;
+        font-size: 12px;
     }
 
     span {
         font-size: 9px;
         color: rgb(169, 165, 165);
+        margin-top: 5px;
     }
 
     .image_right {
+        position: relative;
         text-align: right;
+        width: 50%;
     }
     .image_right img {
-        width: 40%;
+        position: absolute;
+        width: 50%;
         height: auto;
+        right: 0px;
+        bottom: -60px;
     }
 </style>

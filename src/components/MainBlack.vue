@@ -23,7 +23,7 @@ export default {
     .main {
         width: 100%;
         background-color: black;
-        padding: 30px 0px;
+        padding: 50px 0px;
     }
 
     .title {

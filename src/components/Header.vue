@@ -7,35 +7,8 @@
 
 
       <ul>
-          <li>
-              <a href="#">CHARACTERS</a>
-          </li>
-          <li>
-              <a href="#">COMICS</a>
-          </li>
-          <li>
-              <a href="#">MOVIES</a>
-          </li>
-          <li>
-              <a href="#">TV</a>
-          </li>
-          <li>
-              <a href="#">GAMES</a>
-          </li>
-          <li>
-              <a href="#">COLLECTIBLES</a>
-          </li>
-          <li>
-              <a href="#">VIDEOS</a>
-          </li>
-          <li>
-              <a href="#">FANS</a>
-          </li>
-          <li>
-              <a href="#">NEWS</a>
-          </li>
-          <li>
-              <a href="#">SHOP</a>
+          <li v-for="(link, index) in links" :key="index">
+              <a :href="link.url">{{ link.text }}</a>
           </li>
       </ul>
     </nav>  
@@ -46,6 +19,78 @@
 <script>
 export default {
   name: 'DcHeader',
+
+  data(){
+    return {
+      links : [       
+        {
+          text : "CHARACTERS",
+          url : "#",
+          cursor : false,
+        },
+
+        {
+          text : "COMICS",
+          url : "#",
+          cursor : false,
+        },
+
+        {
+          text : "MOVIES",
+          url : "#",
+          cursor : false,
+        },
+
+        {
+          text : "TV",
+          url : "#",
+          cursor : false,
+        },
+
+        {
+          text : "GAMES",
+          url : "#",
+          cursor : false,
+        },
+
+        {
+          text : "TV",
+          url : "#",
+          cursor : false,
+        },
+
+        {
+          text : "COLLECTIBLES",
+          url : "#",
+          cursor : false,
+        },
+
+        {
+          text : "VIDEOS",
+          url : "#",
+          cursor : false,
+        },
+
+        {
+          text : "FANS",
+          url : "#",
+          cursor : false,
+        },
+
+        {
+          text : "NEWS",
+          url : "#",
+          cursor : false,
+        },
+
+        {
+          text : "SHOP",
+          url : "#",
+          cursor : false,
+        },
+      ],
+    }
+  }
 }
 </script>
 

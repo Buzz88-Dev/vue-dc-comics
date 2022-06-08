@@ -75,7 +75,9 @@ export default {
         align-items: center;
 
         span {
-            font-size: 10px;
+            font-size: 15px;
+            color: blue;
+            font-weight: bold;
         }
 
         img {

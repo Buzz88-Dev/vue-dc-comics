@@ -52,7 +52,7 @@ export default {
 
     .footer_backgr {
         width: 100%;
-        background-color: rgb(73, 71, 71);
+        background-color: rgb(53, 51, 51);
     }
 
     .width80 {
@@ -66,7 +66,7 @@ export default {
 
     button {
         color: white;
-        background-color: rgb(73, 71, 71);
+        background-color: rgb(53, 51, 51);
         padding: 10px;
         border: rgb(31, 75, 235) 2px solid;
     }
@@ -76,7 +76,7 @@ export default {
 
         span {
             font-size: 15px;
-            color: blue;
+            color: rgb(40, 40, 240);
             font-weight: bold;
         }
 

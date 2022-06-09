@@ -2,50 +2,15 @@
   <div class="background_Image">
       <div class="width80">
             <div class="text_left">
-                <div class="text_column">
-                    <h4>DC COMICS</h4>
-                    <span>Characters</span>
-                    <span>Comics</span>
-                    <span>Movies</span>
-                    <span>TV</span>
-                    <span>Games</span>
-                    <span>Videos</span>
-                    <span>News</span>
-                </div>
 
-                <div class="text_column">
-                    <h4>SHOP</h4>
-                    <span>Shop DC</span>
-                    <span>Shop DC Collectibles</span>
-                </div>
-
-                <div class="text_column">
-                    <h4>DC</h4>
-                    <span>Terms Of Use</span>
-                    <span>Privacy policy (New)</span>
-                    <span>Ad Choices</span>
-                    <span>Advertising</span>
-                    <span>Jobs</span>
-                    <span>Subscriptions</span>
-                    <span>Talent Workshops</span>
-                    <span>CPSC Certificates</span>
-                    <span>Ratings</span>
-                    <span>Shop Help</span>
-                    <span>Contact Us</span>
-                </div>
-
-                <div class="text_column"> 
-                    <h4>SITES</h4>
-                    <span>DC</span>
-                    <span>MAD Magazine</span>
-                    <span>DC Kids</span>
-                    <span>DC Universe</span>
-                    <span>DC Power VIsa</span>
+                <div class="text_column" v-for="(servizio, index) in services" :key="index">
+                    <h4>{{ servizio.title }}</h4>
+                    <span v-for="(nameService, i) in servizio.service" :key="i"> {{ nameService }}</span>
                 </div>
             </div>
 
             <div class="image_right">
-                <!-- <img src="../assets/dc-logo-bg.png" alt=""> -->
+                
             </div>
       </div>
   </div>
@@ -54,6 +19,33 @@
 <script>
 export default {
   name: 'DcFooter',
+
+  data(){
+      return {
+          services : [
+            {
+                title: "DC COMICS",
+                service : ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"]
+            },
+
+            {
+                title: "SHOP",
+                service : ["Shop DC", "Shop DC Collectibles"]
+            },
+
+            {
+                title: "DC",
+                service : ["Terms Of Use", "Privacy policy (New)", "Ad Choices", "Advertising", "Jobs", "Subscriptions", "Talent Workshops", "CPSC Certificates", "Ratings", "Shop Help", "Contact Us"]
+            },
+
+            {
+                title: "SITES",
+                service : ["DC", "MAD Magazine", "Ad Choices", "DC Kids", "DC Universe", "DC Power Visa"]
+            }
+
+        ]   
+    }
+  }
 }
 </script>
 
@@ -107,8 +99,7 @@ export default {
         background-image: url('../assets/dc-logo-bg.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100% 120%;
-        text-align: right;
+        background-size: 80% 130%;
         width: 50%;
     }
 

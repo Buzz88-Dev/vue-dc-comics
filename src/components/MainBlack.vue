@@ -4,7 +4,7 @@
           <img src="../assets/jumbotron.jpg" alt="">
       </div>
       <div class="title">
-          <SeriesTV v-for="(serie, index) in series" :key="index" :serieList="serie" class="serie"/>
+          <SeriesTV v-for="(serie, index) in series" :key="index" :serieList="serie"/>
       </div>
   </div>
 </template>
@@ -125,6 +125,9 @@ export default {
     .title {
         width: 80%;
         margin: auto;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
     }
     
 </style>

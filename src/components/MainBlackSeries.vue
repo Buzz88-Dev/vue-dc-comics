@@ -1,10 +1,8 @@
 <template>
-    <div class="container">
-        <div >
+    <div class="container_serie">
            <img :src="serieList.thumb">
            <span>{{ serieList.series }}</span>
            <span>Price: {{ serieList.price }}</span>
-       </div>
     </div>
 </template>
 
@@ -20,22 +18,21 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-    
-    .container_serie {
-        display: flex;
-        flex-direction: column;
-        width: 150px;
-        padding: 20px 0px;
+<style scoped lang="scss">  
+   .container_serie {
+       display: flex;
+       flex-direction: column;
+       margin: 20px;
+       flex-basis: 12%;
 
-        img {
-            width: 150px;
-            height: 150px;
-        }
-    }
+       img {
+           width: 100%;
+           height: auto;
+       }
 
-    span {
-        font-size: 10px;
-        padding: 5px 0px;
-    }
+       span {
+           margin: 5px 0px;
+           font-size: 10px;
+       }
+   } 
 </style>

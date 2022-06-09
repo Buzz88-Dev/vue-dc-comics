@@ -45,7 +45,7 @@
             </div>
 
             <div class="image_right">
-                <img src="../assets/dc-logo-bg.png" alt="">
+                <!-- <img src="../assets/dc-logo-bg.png" alt=""> -->
             </div>
       </div>
   </div>
@@ -68,18 +68,21 @@ export default {
 
     .background_Image {
         background-image: url("../assets/footer-bg.jpg");
-        padding: 40px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .width80 {
         width: 80%;
         margin: auto;
         display: flex;
+        justify-content: space-between;
     }
 
     .text_left {
         display: flex;
-        width: 50%;
+        width: 40%;
+        padding: 40px 0px;
     }
 
     .text_column {
@@ -101,15 +104,12 @@ export default {
     }
 
     .image_right {
-        position: relative;
+        background-image: url('../assets/dc-logo-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 120%;
         text-align: right;
         width: 50%;
     }
-    .image_right img {
-        position: absolute;
-        width: 50%;
-        height: auto;
-        right: 0px;
-        bottom: -60px;
-    }
+
 </style>

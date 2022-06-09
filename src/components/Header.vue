@@ -26,67 +26,56 @@ export default {
         {
           text : "CHARACTERS",
           url : "#",
-          cursor : false,
         },
 
         {
           text : "COMICS",
           url : "#",
-          cursor : false,
         },
 
         {
           text : "MOVIES",
           url : "#",
-          cursor : false,
         },
 
         {
           text : "TV",
           url : "#",
-          cursor : false,
         },
 
         {
           text : "GAMES",
           url : "#",
-          cursor : false,
         },
 
         {
           text : "TV",
           url : "#",
-          cursor : false,
         },
 
         {
           text : "COLLECTIBLES",
           url : "#",
-          cursor : false,
         },
 
         {
           text : "VIDEOS",
           url : "#",
-          cursor : false,
         },
 
         {
           text : "FANS",
           url : "#",
-          cursor : false,
         },
 
         {
           text : "NEWS",
           url : "#",
-          cursor : false,
         },
 
         {
           text : "SHOP",
           url : "#",
-          cursor : false,
         },
       ],
     }

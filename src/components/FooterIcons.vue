@@ -76,14 +76,13 @@ export default {
 
         span {
             font-size: 15px;
-            color: rgb(40, 40, 240);
-            font-weight: bold;
+            color: rgb(59, 59, 238);
         }
 
         img {
             margin-left: 10px;
             border-radius: 50%;
-            background-color: white;
+            background-color: rgb(53, 51, 51);
         }
     }
 

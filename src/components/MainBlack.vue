@@ -1,11 +1,15 @@
 <template>
   <div class="main">
-      <div class="jumbotron">
+        <div class="jumbotron">
           <img src="../assets/jumbotron.jpg" alt="">
-      </div>
-      <div class="title">
+        </div>
+        <div class="current-series">CURRENT SERIES</div>
+        <div class="title">
           <SeriesTV v-for="(serie, index) in series" :key="index" :serieList="serie"/>
-      </div>
+        </div>
+        <div class="load-more">
+            <a href="#">LOAD MORE</a>
+        </div>
   </div>
 </template>
 
@@ -122,12 +126,46 @@ export default {
         object-fit: cover;    
     }
 
+    .current-series {
+            transform: translate(60%,-50%);
+            width: 250px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+            background-color: rgb(39, 148, 194);
+        }
+
     .title {
         width: 80%;
         margin: auto;
         color: white;
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .load-more {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            
+
+            a {
+                text-decoration: none;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 35px;
+                width: 180px;
+                font-size: 14px;
+                font-weight: 600;
+                background-color: rgb(39, 148, 194);
+            }
     }
     
 </style>
